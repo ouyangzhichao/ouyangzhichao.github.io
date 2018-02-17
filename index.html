@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -61,10 +61,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-createBlog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/02/17/hello-world/" class="article-date">
-  <time datetime="2018-02-17T03:23:05.009Z" itemprop="datePublished">2018-02-17</time>
+    <a href="/2018/02/17/createBlog/" class="article-date">
+  <time datetime="2018-02-17T09:26:43.991Z" itemprop="datePublished">2018-02-17</time>
 </a>
     
   </div>
@@ -73,7 +73,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+        <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="tags" content="[其他教程]">
+<meta name="date" content="2018-02-17 11:18:37"><style>body {
   max-width: 980px;
   border: 1px solid #ddd;
   outline: 1300px solid #fff;
@@ -1089,32 +1090,104 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>Hello World</title></head><body><article class="markdown-body"><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="quick-start"><a name="user-content-quick-start" href="#quick-start" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Quick Start</h2>
-<h3 id="create-a-new-post"><a name="user-content-create-a-new-post" href="#create-a-new-post" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Create a new post</h3>
-<pre><code class="bash">$ hexo new &quot;My New Post&quot;
-</code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="run-server"><a name="user-content-run-server" href="#run-server" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Run server</h3>
-<pre><code class="bash">$ hexo server
-</code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="generate-static-files"><a name="user-content-generate-static-files" href="#generate-static-files" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Generate static files</h3>
-<pre><code class="bash">$ hexo generate
-</code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a name="user-content-deploy-to-remote-sites" href="#deploy-to-remote-sites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Deploy to remote sites</h3>
-<pre><code class="bash">$ hexo deploy
-</code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p></article></body></html>
+</style><title>'利用github写博客'</title></head><body><article class="markdown-body"><blockquote>
+<p>废话不多说，我们开始利用 <a href="www.github.com">github</a>创建属于我们博客吧！</p>
+</blockquote>
+<p><em>声明:接下来的所有操作都是在windows下运行的</em></p>
+<h1 id="1"><a name="user-content-1" href="#1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.环境搭建</h1>
+<p>首先需要下面两个东西<br>
+ - node.js<br>
+ - git</p>
+<blockquote>
+<p>git和node.js自行到网上下载，默认安装就好(ps:多少位的系统装多少位的程序)<br>
+两个都安装按了之后，打开命令窗口(安装 <strong>win+R</strong> 后输入cmd即可调出命令窗口), <br>
+分别输入 <strong>node -v</strong><br>
+<strong>npm -v</strong> 及 <strong>git &ndash;version</strong><br>
+，这个三个命令是为了查看刚才我们安装的软件的版本，如果你能够看到他们的版本号<br>
+(如下图所示，版本号会有所不一样)，那么环境搭建你已经成功，你可以进行下一步操作了 <br>
+<img alt="SoftWareVersion" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/SoftWareVersion.PNG"></p>
+</blockquote>
+<h2 id="11"><a name="user-content-11" href="#11" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.1 安装有问题跟着走</h2>
+<blockquote>
+<p>找到刚才安装软件的路径，例如我的路径为“D:\tools\nodejs”、“D:\tools\Git”。复制安装路<br>
+径，打开计算机-&gt;右键单击属性-&gt;选择高级系统设置-&gt;点击环境变量-&gt;双击path-&gt;<br>
+将我们安装的路径追加到变量之后 !注意分号以及确定保存。<br>
+<img alt="environment" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/environment.png"></p>
+</blockquote>
+<h1 id="2github"><a name="user-content-2github" href="#2github" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.拥有github账号</h1>
+<h2 id="21-github"><a name="user-content-21-github" href="#21-github" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1 注册<code>github</code></h2>
+<blockquote>
+<p>先到<a href="https://github.com" target="_blank" rel="noopener">github</a>官网进行注册</p>
+</blockquote>
+<h2 id="22-ssh"><a name="user-content-22-ssh" href="#22-ssh" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.2 SSH授权</h2>
+<blockquote>
+<p>注册好账号之后我们可以随意给的擦好看其他人的项目，甚至是clone下载，但是要提交代码必须<br>
+完成SSH授权。</p>
+</blockquote>
+<h3 id="221-ssh-key"><a name="user-content-221-ssh-key" href="#221-ssh-key" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.2.1 生成SSH key</h3>
+<blockquote>
+<p>打开Git Bash, 输入 <strong>ssh-keygen</strong> 然后按三下回车，将会生成id_rsa, <br>
+id_rsa.pub两个文件。</p>
+</blockquote>
+<h3 id="222-githubssh-key"><a name="user-content-222-githubssh-key" href="#222-githubssh-key" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.2.2 在github上添加SSH Key</h3>
+<blockquote>
+<p>首先点击右上角的倒三角进入设置界面<br>
+<img alt="settings" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/settings.PNG"><br>
+紧接着选择左侧SSH and GPG keys，再把id_sra.pub(上面操作生成文件)<br>
+的内容复制黏贴到key，最后Add SSH key就Ok了。<br>
+<img alt="addShhKey.PNG" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/addShhKey.PNG"><br>
+<code>SSH key</code>添加成功之后，输入 <strong>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener"><a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></a></strong><br>
+进行测试，如果出现以下提示证明添加成功公告成功了。<br>
+<img alt="connectGithub.PNG" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/connectGithub.PNG"></p>
+</blockquote>
+<h1 id="3github"><a name="user-content-3github" href="#3github" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.创建GitHub仓库</h1>
+<p><img alt="createRepository.PNG" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/createRepository.PNG"><br>
+<img alt="newRepository.PNG" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/newRepository.PNG"></p>
+<blockquote>
+<p>需要注意的地方是项目名称一定要使用<strong>你的名字.github.io</strong></p>
+</blockquote>
+<h1 id="4"><a name="user-content-4" href="#4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.设置本地博客的配置</h1>
+<h2 id="41-hexo"><a name="user-content-41-hexo" href="#41-hexo" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.1 安装Hexo</h2>
+<blockquote>
+<p>在你认为合适的地方创建一个文件夹，然后在文件夹空白处按住<strong>shift+鼠标右键</strong>，然后点击<br>
+在此处打开命令行窗口。<br>
+在命令行输入 <strong>npm install -g hexo</strong><br>
+<img alt="createHexo.png" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/createHexo.png"><br>
+然后输入 <strong>npm install hexo &ndash;save</strong> 这时候你会看到命令窗口刷了一堆白字，然后输入 <br>
+<strong>hexo -v</strong> 查看Hexo是否安装成功了。<br>
+<img alt="hexoCreate.png" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoCreate.png"></p>
+</blockquote>
+<h2 id="42-hexo"><a name="user-content-42-hexo" href="#42-hexo" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.2 初始化Hexo</h2>
+<blockquote>
+<p>同样是在命令窗口中，继续输入 <strong>hexo init</strong>, 等待下载好了之后输入 <strong>hexo s</strong><br>
+<img alt="hexoCreate.png" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoSave.png"><br>
+<img alt="hexoCreate.png" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoSave1.png"><br>
+这时候我们就可以打开浏览器了，在地址栏中输入<font face="微软雅黑" color="red" size="3"> <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></font><br>
+<img alt="hexoCreate.png" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoUrl.png"></p>
+<p>接下来先看一下我们的博客文章放在哪里。打开我们的文件夹下面的source文件夹，你会发现里面<br>
+有一个_posts文件夹，再进入就会看到一片初始化的文章hello-world.md也就是上图显示在页面<br>
+的文章。如果我们想新建文章的话，可以通过命令窗口输入 <strong>hexo new &lsquo;filename&rsquo;</strong> <br>
+我们的文件夹下面就会生成一个新的md文件，然后我们打开编辑就可以了。</p>
+</blockquote>
+<h2 id="43"><a name="user-content-43" href="#43" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.3 发布博客</h2>
+<blockquote>
+<p>首先复制我们的 <strong>github</strong> 项目地址，如下图。<br>
+<img alt="getUrl.PNG" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/getUrl.PNG"><br>
+然后打开我们新建的文件夹下面生成的 <strong>_config.yml</strong> 文件，在最下方作如下修改。<br>
+<img alt="config.PNG" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/config.png"></p>
+<p>deploy 是部署的意思，<strong>type:git</strong> 就是使用git进行部署，<strong>repo:github</strong> 仓库地址</p>
+<p>注意：repo原本是没有的，在最后自己加上就好。<strong>冒号之后有一个空格 冒号之后有一个空格 冒号之后一个空格</strong></p>
+<p>接下来回到命令窗口，输入 <strong>npm install hexo-deployer-git &ndash;save</strong><br>
+<img alt="hexo-deployger.png" src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexo-deployger.png"><br>
+安装好<strong>Git</strong>上传插件之后，输入 <strong>hexo g</strong>，然后输入 <strong>hexo d</strong> 就可以将我们的博客<br>
+上传到我们的Github上，而且以后更新文章只需要用这两个命令就可以了。这样别人也可以通过<a href="https://yourname.github.io" target="_blank" rel="noopener">https://yourname.github.io</a> <br>
+来访问我们的博客了（开头一定要用<strong>https</strong>，yourname是你github的名字）。</p>
+</blockquote>
+<p><meta http-equiv="refresh" content="10"></p></article></body></html>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/17/hello-world/" data-id="cjdr5ie3e0003nov2n35dzkai" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/02/17/createBlog/" data-id="cjdr60n650001cgv24w3l57ro" class="article-share-link">Compartir</a>
       
       
     </footer>
@@ -1182,7 +1255,84 @@ body .markdown-body
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/17/2018-2-17利用github写博客/" data-id="cjdr5ie2y0000nov262bo1m45" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/02/17/2018-2-17利用github写博客/" data-id="cjdr60n610000cgv2lkepqs19" class="article-share-link">Compartir</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/其他教程/">其他教程</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-createBlog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/17/createBlog/" class="article-date">
+  <time datetime="2018-02-17T03:18:37.000Z" itemprop="datePublished">2018-02-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/17/createBlog/">利用github写博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>废话不多说，我们开始利用 <a href="www.github.com">github</a>创建属于我们博客吧！</p>
+</blockquote>
+<p><em>声明:接下来的所有操作都是在windows下运行的</em></p>
+<h1 id="1-环境搭建"><a href="#1-环境搭建" class="headerlink" title="1.环境搭建"></a>1.环境搭建</h1><p>首先需要下面两个东西</p>
+<ul>
+<li>node.js</li>
+<li><p>git</p>
+<blockquote>
+<p>git和node.js自行到网上下载，默认安装就好(ps:多少位的系统装多少位的程序)<br>两个都安装按了之后，打开命令窗口(安装 <strong>win+R</strong> 后输入cmd即可调出命令窗口),<br>分别输入 <strong>node -v</strong><br><strong>npm -v</strong> 及 <strong>git –version</strong><br>，这个三个命令是为了查看刚才我们安装的软件的版本，如果你能够看到他们的版本号<br>(如下图所示，版本号会有所不一样)，那么环境搭建你已经成功，你可以进行下一步操作了<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/SoftWareVersion.PNG" alt="SoftWareVersion"></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="1-1-安装有问题跟着走"><a href="#1-1-安装有问题跟着走" class="headerlink" title="1.1 安装有问题跟着走"></a>1.1 安装有问题跟着走</h2><blockquote>
+<p>找到刚才安装软件的路径，例如我的路径为“D:\tools\nodejs”、“D:\tools\Git”。复制安装路<br>径，打开计算机-&gt;右键单击属性-&gt;选择高级系统设置-&gt;点击环境变量-&gt;双击path-&gt;<br>将我们安装的路径追加到变量之后 !注意分号以及确定保存。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/environment.png" alt="environment"></p>
+</blockquote>
+<h1 id="2-拥有github账号"><a href="#2-拥有github账号" class="headerlink" title="2.拥有github账号"></a>2.拥有github账号</h1><h2 id="2-1-注册github"><a href="#2-1-注册github" class="headerlink" title="2.1 注册github"></a>2.1 注册<code>github</code></h2><blockquote>
+<p>先到<a href="https://github.com" target="_blank" rel="noopener">github</a>官网进行注册</p>
+<h2 id="2-2-SSH授权"><a href="#2-2-SSH授权" class="headerlink" title="2.2 SSH授权"></a>2.2 SSH授权</h2><p>注册好账号之后我们可以随意给的擦好看其他人的项目，甚至是clone下载，但是要提交代码必须<br>完成SSH授权。</p>
+<h3 id="2-2-1-生成SSH-key"><a href="#2-2-1-生成SSH-key" class="headerlink" title="2.2.1 生成SSH key"></a>2.2.1 生成SSH key</h3><p>打开Git Bash, 输入 <strong>ssh-keygen</strong> 然后按三下回车，将会生成id_rsa,<br>id_rsa.pub两个文件。</p>
+<h3 id="2-2-2-在github上添加SSH-Key"><a href="#2-2-2-在github上添加SSH-Key" class="headerlink" title="2.2.2 在github上添加SSH Key"></a>2.2.2 在github上添加SSH Key</h3><p>首先点击右上角的倒三角进入设置界面<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/settings.PNG" alt="settings"><br>紧接着选择左侧SSH and GPG keys，再把id_sra.pub(上面操作生成文件)<br>的内容复制黏贴到key，最后Add SSH key就Ok了。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/addShhKey.PNG" alt="addShhKey.PNG"><br><code>SSH key</code>添加成功之后，输入 <strong>ssh -T git@github.com</strong><br>进行测试，如果出现以下提示证明添加成功公告成功了。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/connectGithub.PNG" alt="connectGithub.PNG"></p>
+</blockquote>
+<h1 id="3-创建GitHub仓库"><a href="#3-创建GitHub仓库" class="headerlink" title="3.创建GitHub仓库"></a>3.创建GitHub仓库</h1><p><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/createRepository.PNG" alt="createRepository.PNG"><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/newRepository.PNG" alt="newRepository.PNG"></p>
+<blockquote>
+<p>需要注意的地方是项目名称一定要使用<strong>你的名字.github.io</strong></p>
+</blockquote>
+<h1 id="4-设置本地博客的配置"><a href="#4-设置本地博客的配置" class="headerlink" title="4.设置本地博客的配置"></a>4.设置本地博客的配置</h1><h2 id="4-1-安装Hexo"><a href="#4-1-安装Hexo" class="headerlink" title="4.1 安装Hexo"></a>4.1 安装Hexo</h2><blockquote>
+<p>在你认为合适的地方创建一个文件夹，然后在文件夹空白处按住<strong>shift+鼠标右键</strong>，然后点击<br>在此处打开命令行窗口。<br>在命令行输入 <strong>npm install -g hexo</strong><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/createHexo.png" alt="createHexo.png"><br>然后输入 <strong>npm install hexo –save</strong> 这时候你会看到命令窗口刷了一堆白字，然后输入<br><strong>hexo -v</strong> 查看Hexo是否安装成功了。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoCreate.png" alt="hexoCreate.png"></p>
+<h2 id="4-2-初始化Hexo"><a href="#4-2-初始化Hexo" class="headerlink" title="4.2 初始化Hexo"></a>4.2 初始化Hexo</h2><p>同样是在命令窗口中，继续输入 <strong>hexo init</strong>, 等待下载好了之后输入 <strong>hexo s</strong><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoSave.png" alt="hexoCreate.png"><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoSave1.png" alt="hexoCreate.png"><br>这时候我们就可以打开浏览器了，在地址栏中输入<font face="微软雅黑" color="red" size="3"> <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></font><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoUrl.png" alt="hexoCreate.png"></p>
+<p>接下来先看一下我们的博客文章放在哪里。打开我们的文件夹下面的source文件夹，你会发现里面<br>有一个_posts文件夹，再进入就会看到一片初始化的文章hello-world.md也就是上图显示在页面<br>的文章。如果我们想新建文章的话，可以通过命令窗口输入 <strong>hexo new ‘filename’</strong><br>我们的文件夹下面就会生成一个新的md文件，然后我们打开编辑就可以了。</p>
+</blockquote>
+<h2 id="4-3-发布博客"><a href="#4-3-发布博客" class="headerlink" title="4.3 发布博客"></a>4.3 发布博客</h2><blockquote>
+<p>首先复制我们的 <strong>github</strong> 项目地址，如下图。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/getUrl.PNG" alt="getUrl.PNG"><br>然后打开我们新建的文件夹下面生成的 <strong>_config.yml</strong> 文件，在最下方作如下修改。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/config.png" alt="config.PNG"></p>
+<p>deploy 是部署的意思，<strong>type:git</strong> 就是使用git进行部署，<strong>repo:github</strong> 仓库地址</p>
+<p>注意：repo原本是没有的，在最后自己加上就好。<strong>冒号之后有一个空格 冒号之后有一个空格 冒号之后一个空格</strong></p>
+<p>接下来回到命令窗口，输入 <strong>npm install hexo-deployer-git –save</strong><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexo-deployger.png" alt="hexo-deployger.png"><br>安装好<strong>Git</strong>上传插件之后，输入 <strong>hexo g</strong>，然后输入 <strong>hexo d</strong> 就可以将我们的博客<br>上传到我们的Github上，而且以后更新文章只需要用这两个命令就可以了。这样别人也可以通过<a href="https://yourname.github.io" target="_blank" rel="noopener">https://yourname.github.io</a><br>来访问我们的博客了（开头一定要用<strong>https</strong>，yourname是你github的名字）。</p>
+</blockquote>
+<meta http-equiv="refresh" content="10">
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/17/createBlog/" data-id="cjdr60n690003cgv2zt5rn280" class="article-share-link">Compartir</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/其他教程/">其他教程</a></li></ul>
@@ -1215,7 +1365,7 @@ body .markdown-body
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Nube de Tags</h3>
     <div class="widget tagcloud">
       <a href="/tags/其他教程/" style="font-size: 10px;">其他教程</a>
     </div>
@@ -1224,7 +1374,7 @@ body .markdown-body
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archivos</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li></ul>
     </div>
@@ -1234,16 +1384,20 @@ body .markdown-body
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Posts recientes</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2018/02/17/hello-world/">(no title)</a>
+            <a href="/2018/02/17/createBlog/">(no title)</a>
           </li>
         
           <li>
             <a href="/2018/02/17/2018-2-17利用github写博客/">利用github写博客</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/17/createBlog/">利用github写博客</a>
           </li>
         
       </ul>
@@ -1259,7 +1413,7 @@ body .markdown-body
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2018 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Construido por <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
