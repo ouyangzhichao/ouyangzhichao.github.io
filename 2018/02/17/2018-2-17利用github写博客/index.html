@@ -7,13 +7,13 @@
   
   <title>利用github写博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="废话不多说，我们开始利用 github创建属于我们博客吧！  声明:接下来的所有操作都是在windows下运行的 1.环境搭建首先需要下面两个东西  node.js git  git和node.js自行到网上下载，默认安装就好(ps:多少位的系统装多少位的程序)两个都安装按了之后，打开命令窗口(安装 win+R 后输入cmd即可调出命令窗口),分别输入 node -vnpm -v 及 git –">
+  <meta name="description" content="废话不多说，我们开始利用 github创建属于我们博客吧！  声明:接下来的所有操作都是在windows下运行的 1.环境搭建 首先需要下面两个东西  node.js git  git和node.js自行到网上下载，默认安装就好（ps:多少位的系统装多少位的程序）两个都安装按了之后，打开命令窗口(安装 win+R 后输入cmd即可调出命令窗口), 分别输入 node-v，npm -v及git –">
 <meta name="keywords" content="其他教程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用github写博客">
 <meta property="og:url" content="http://yoursite.com/2018/02/17/2018-2-17利用github写博客/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="废话不多说，我们开始利用 github创建属于我们博客吧！  声明:接下来的所有操作都是在windows下运行的 1.环境搭建首先需要下面两个东西  node.js git  git和node.js自行到网上下载，默认安装就好(ps:多少位的系统装多少位的程序)两个都安装按了之后，打开命令窗口(安装 win+R 后输入cmd即可调出命令窗口),分别输入 node -vnpm -v 及 git –">
+<meta property="og:description" content="废话不多说，我们开始利用 github创建属于我们博客吧！  声明:接下来的所有操作都是在windows下运行的 1.环境搭建 首先需要下面两个东西  node.js git  git和node.js自行到网上下载，默认安装就好（ps:多少位的系统装多少位的程序）两个都安装按了之后，打开命令窗口(安装 win+R 后输入cmd即可调出命令窗口), 分别输入 node-v，npm -v及git –">
 <meta property="og:image" content="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/SoftWareVersion.PNG">
 <meta property="og:image" content="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/environment.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/settings.PNG">
@@ -29,10 +29,10 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/getUrl.PNG">
 <meta property="og:image" content="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/config.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexo-deployger.png">
-<meta property="og:updated_time" content="2018-02-17T09:32:45.793Z">
+<meta property="og:updated_time" content="2018-02-17T11:45:43.201Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用github写博客">
-<meta name="twitter:description" content="废话不多说，我们开始利用 github创建属于我们博客吧！  声明:接下来的所有操作都是在windows下运行的 1.环境搭建首先需要下面两个东西  node.js git  git和node.js自行到网上下载，默认安装就好(ps:多少位的系统装多少位的程序)两个都安装按了之后，打开命令窗口(安装 win+R 后输入cmd即可调出命令窗口),分别输入 node -vnpm -v 及 git –">
+<meta name="twitter:description" content="废话不多说，我们开始利用 github创建属于我们博客吧！  声明:接下来的所有操作都是在windows下运行的 1.环境搭建 首先需要下面两个东西  node.js git  git和node.js自行到网上下载，默认安装就好（ps:多少位的系统装多少位的程序）两个都安装按了之后，打开命令窗口(安装 win+R 后输入cmd即可调出命令窗口), 分别输入 node-v，npm -v及git –">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/SoftWareVersion.PNG">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -69,9 +69,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -106,23 +106,28 @@
 <p>废话不多说，我们开始利用 <a href="www.github.com">github</a>创建属于我们博客吧！</p>
 </blockquote>
 <p><em>声明:接下来的所有操作都是在windows下运行的</em></p>
-<h1 id="1-环境搭建"><a href="#1-环境搭建" class="headerlink" title="1.环境搭建"></a>1.环境搭建</h1><p>首先需要下面两个东西</p>
+<h1 id="1-环境搭建"><a href="#1-环境搭建" class="headerlink" title="1.环境搭建"></a>1.环境搭建</h1><blockquote>
+<p>首先需要下面两个东西</p>
 <ul>
 <li>node.js</li>
-<li><p>git</p>
-<blockquote>
-<p>git和node.js自行到网上下载，默认安装就好(ps:多少位的系统装多少位的程序)<br>两个都安装按了之后，打开命令窗口(安装 <strong>win+R</strong> 后输入cmd即可调出命令窗口),<br>分别输入 <strong>node -v</strong><br><strong>npm -v</strong> 及 <strong>git –version</strong><br>，这个三个命令是为了查看刚才我们安装的软件的版本，如果你能够看到他们的版本号<br>(如下图所示，版本号会有所不一样)，那么环境搭建你已经成功，你可以进行下一步操作了<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/SoftWareVersion.PNG" alt="SoftWareVersion"></p>
-</blockquote>
-</li>
+<li>git</li>
 </ul>
+<p>git和node.js自行到网上下载，默认安装就好（ps:多少位的系统装多少位的程序）两个都安装<br>按了之后，打开命令窗口(安装 <strong>win+R</strong> 后输入cmd即可调出命令窗口), 分别输入 <strong>node<br>-v</strong>，<strong>npm -v</strong>及<strong>git –version</strong>，这个三个命令是为了查看刚才我们安装的软件的版<br>本，如果你能够看到他们的版本号（如下图所示，版本号会有所不一样），那么环境搭建你已经<br>成功，你可以进行下一步操作了。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/SoftWareVersion.PNG" alt="SoftWareVersion"></p>
+</blockquote>
 <h2 id="1-1-安装有问题跟着走"><a href="#1-1-安装有问题跟着走" class="headerlink" title="1.1 安装有问题跟着走"></a>1.1 安装有问题跟着走</h2><blockquote>
-<p>找到刚才安装软件的路径，例如我的路径为“D:\tools\nodejs”、“D:\tools\Git”。复制安装路<br>径，打开计算机-&gt;右键单击属性-&gt;选择高级系统设置-&gt;点击环境变量-&gt;双击path-&gt;<br>将我们安装的路径追加到变量之后 !注意分号以及确定保存。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/environment.png" alt="environment"></p>
+<p>找到刚才安装软件的路径，例如我的路径为“D:\tools\nodejs”、“D:\tools\Git”。复制安装路<br>径，打开计算机-》右键单击属性-》选择高级系统设置-》点击环境变量-》双击path，将我们安装的<br>路径追加到变量之后 !注意分号以及确定保存。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/environment.png" alt="environment"></p>
 </blockquote>
 <h1 id="2-拥有github账号"><a href="#2-拥有github账号" class="headerlink" title="2.拥有github账号"></a>2.拥有github账号</h1><h2 id="2-1-注册github"><a href="#2-1-注册github" class="headerlink" title="2.1 注册github"></a>2.1 注册<code>github</code></h2><blockquote>
 <p>先到<a href="https://github.com" target="_blank" rel="noopener">github</a>官网进行注册</p>
-<h2 id="2-2-SSH授权"><a href="#2-2-SSH授权" class="headerlink" title="2.2 SSH授权"></a>2.2 SSH授权</h2><p>注册好账号之后我们可以随意给的擦好看其他人的项目，甚至是clone下载，但是要提交代码必须<br>完成SSH授权。</p>
-<h3 id="2-2-1-生成SSH-key"><a href="#2-2-1-生成SSH-key" class="headerlink" title="2.2.1 生成SSH key"></a>2.2.1 生成SSH key</h3><p>打开Git Bash, 输入 <strong>ssh-keygen</strong> 然后按三下回车，将会生成id_rsa,<br>id_rsa.pub两个文件。</p>
-<h3 id="2-2-2-在github上添加SSH-Key"><a href="#2-2-2-在github上添加SSH-Key" class="headerlink" title="2.2.2 在github上添加SSH Key"></a>2.2.2 在github上添加SSH Key</h3><p>首先点击右上角的倒三角进入设置界面<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/settings.PNG" alt="settings"><br>紧接着选择左侧SSH and GPG keys，再把id_sra.pub(上面操作生成文件)<br>的内容复制黏贴到key，最后Add SSH key就Ok了。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/addShhKey.PNG" alt="addShhKey.PNG"><br><code>SSH key</code>添加成功之后，输入 <strong>ssh -T git@github.com</strong><br>进行测试，如果出现以下提示证明添加成功公告成功了。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/connectGithub.PNG" alt="connectGithub.PNG"></p>
+</blockquote>
+<h2 id="2-2-SSH授权"><a href="#2-2-SSH授权" class="headerlink" title="2.2 SSH授权"></a>2.2 SSH授权</h2><blockquote>
+<p>注册好账号之后我们可以随意给的擦好看其他人的项目，甚至是clone下载，但是要提交代码必须<br>完成SSH授权。</p>
+</blockquote>
+<h3 id="2-2-1-生成SSH-key"><a href="#2-2-1-生成SSH-key" class="headerlink" title="2.2.1 生成SSH key"></a>2.2.1 生成SSH key</h3><blockquote>
+<p>打开Git Bash，输入 <strong>ssh-keygen</strong> 然后按三下回车，将会生成id_rsa，id_rsa.pub文件。</p>
+</blockquote>
+<h3 id="2-2-2-在github上添加SSH-Key"><a href="#2-2-2-在github上添加SSH-Key" class="headerlink" title="2.2.2 在github上添加SSH Key"></a>2.2.2 在github上添加SSH Key</h3><blockquote>
+<p>首先点击右上角的倒三角进入设置界面<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/settings.PNG" alt="settings"><br>紧接着选择左侧<code>SSH and GPG keys</code>，把<code>id_sra.pub</code>（上面操作生成文件）<br>的内容复制黏贴到key，最后Add SSH key就Ok了。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/addShhKey.PNG" alt="addShhKey.PNG"><br><code>SSH key</code>添加成功之后，输入 <strong>ssh -T git@github.com</strong><br>进行测试，如果出现以下提示证明添加成功公告成功了。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/connectGithub.PNG" alt="connectGithub.PNG"></p>
 </blockquote>
 <h1 id="3-创建GitHub仓库"><a href="#3-创建GitHub仓库" class="headerlink" title="3.创建GitHub仓库"></a>3.创建GitHub仓库</h1><p><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/createRepository.PNG" alt="createRepository.PNG"><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/newRepository.PNG" alt="newRepository.PNG"></p>
 <blockquote>
@@ -130,7 +135,9 @@
 </blockquote>
 <h1 id="4-设置本地博客的配置"><a href="#4-设置本地博客的配置" class="headerlink" title="4.设置本地博客的配置"></a>4.设置本地博客的配置</h1><h2 id="4-1-安装Hexo"><a href="#4-1-安装Hexo" class="headerlink" title="4.1 安装Hexo"></a>4.1 安装Hexo</h2><blockquote>
 <p>在你认为合适的地方创建一个文件夹，然后在文件夹空白处按住<strong>shift+鼠标右键</strong>，然后点击<br>在此处打开命令行窗口。<br>在命令行输入 <strong>npm install -g hexo</strong><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/createHexo.png" alt="createHexo.png"><br>然后输入 <strong>npm install hexo –save</strong> 这时候你会看到命令窗口刷了一堆白字，然后输入<br><strong>hexo -v</strong> 查看Hexo是否安装成功了。<br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoCreate.png" alt="hexoCreate.png"></p>
-<h2 id="4-2-初始化Hexo"><a href="#4-2-初始化Hexo" class="headerlink" title="4.2 初始化Hexo"></a>4.2 初始化Hexo</h2><p>同样是在命令窗口中，继续输入 <strong>hexo init</strong>, 等待下载好了之后输入 <strong>hexo s</strong><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoSave.png" alt="hexoCreate.png"><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoSave1.png" alt="hexoCreate.png"><br>这时候我们就可以打开浏览器了，在地址栏中输入<font face="微软雅黑" color="red" size="3"> <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></font><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoUrl.png" alt="hexoCreate.png"></p>
+</blockquote>
+<h2 id="4-2-初始化Hexo"><a href="#4-2-初始化Hexo" class="headerlink" title="4.2 初始化Hexo"></a>4.2 初始化Hexo</h2><blockquote>
+<p>同样是在命令窗口中，继续输入 <strong>hexo init</strong>, 等待下载好了之后输入 <strong>hexo s</strong><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoSave.png" alt="hexoCreate.png"><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoSave1.png" alt="hexoCreate.png"><br>这时候我们就可以打开浏览器了，在地址栏中输入<font face="微软雅黑" color="red" size="3"> <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></font><br><img src="https://raw.githubusercontent.com/ouyangzhichao/ouyangzhichao.github.io/master/css/images/hexoUrl.png" alt="hexoCreate.png"></p>
 <p>接下来先看一下我们的博客文章放在哪里。打开我们的文件夹下面的source文件夹，你会发现里面<br>有一个_posts文件夹，再进入就会看到一片初始化的文章hello-world.md也就是上图显示在页面<br>的文章。如果我们想新建文章的话，可以通过命令窗口输入 <strong>hexo new ‘filename’</strong><br>我们的文件夹下面就会生成一个新的md文件，然后我们打开编辑就可以了。</p>
 </blockquote>
 <h2 id="4-3-发布博客"><a href="#4-3-发布博客" class="headerlink" title="4.3 发布博客"></a>4.3 发布博客</h2><blockquote>
@@ -145,7 +152,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/17/2018-2-17利用github写博客/" data-id="cjdr61w060000x4v2m2hevi54" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/02/17/2018-2-17利用github写博客/" data-id="cjdrb3mq40000p4v26tpxmw1v" class="article-share-link">Compartir</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/其他教程/">其他教程</a></li></ul>
@@ -176,7 +183,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Nube de Tags</h3>
     <div class="widget tagcloud">
       <a href="/tags/其他教程/" style="font-size: 10px;">其他教程</a>
     </div>
@@ -185,7 +192,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archivos</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li></ul>
     </div>
@@ -195,7 +202,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Posts recientes</h3>
     <div class="widget">
       <ul>
         
@@ -216,7 +223,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2018 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Construido por <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
